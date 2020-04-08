@@ -1,0 +1,30 @@
+CREATE TABLE department(
+  dept_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  dept_name TEXT
+);
+
+INSERT INTO department(dept_name)
+VALUES
+  ('Admin'),
+  ('Sales'),
+  ('Quality Control'),
+  ('Marketing');
+
+CREATE TABLE employee(
+  emp_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  first_name TEXT,
+  last_name TEXT,
+  salary NUMERIC,
+  dept_id INTEGER
+);
+
+INSERT INTO employee
+VALUES
+  (2,'Shweta','Jariwala', 19300,2),
+  (3,'Vinay','Jariwala', 35100,3),
+  (4,'Jagruti','Viras', 9500,2),
+  (5,'Shweta','Rana',12000,3),
+  (6,'sonal','Menpara', 13000,1),
+  (7,'Yamini','Patel', 10000,2),
+  (8,'Khyati','Shah', 500000,3),
+  (9,'Shwets','Jariwala',19400,2);
