@@ -21,7 +21,7 @@ CREATE TRIGGER trigger_view_insert
 INSTEAD OF INSERT ON employee_view 
 BEGIN
   INSERT INTO employee(emp_id,first_name,last_name) 
-  SELECT new.employee_id, new.first_name,new.last_name; 
+  SELECT new.emp_id, new.first_name,new.last_name; 
 END;
 
 INSERT INTO employee_view(emp_id,first_name,last_name) 
